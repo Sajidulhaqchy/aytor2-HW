@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aytor</title>
+    <!-- css starts -->
+    <!-- *bootstrp starts -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- * slick slider -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <!-- * main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- *responsive css -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- css ends -->
+
+    <!-- * Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- *ends -->
+  </head>
+  <body>
+    <!-- *LARGE MENU -->
+    <!-- NAV-BAR STARTS -->
+    <nav class="navbar navbar-expand-lg d-none d-lg-block">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/Logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLg">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <!-- *menus -->
+            <li class="nav-item">
+              <a class="nav-link active-link" aria-current="page" href="#">Home
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Shop
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Pages
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Features
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Blogs
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- * social LINKS -->
+        <div class="social-link">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-bag-shopping">
+                  <span class="cartCount">0</span>
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- * Small menu -->
+    <nav class="d-block d-lg-none navbarSm">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-3 menuSm text-center">
+              <!-- off canvus -->
+              <a  data-bs-toggle="offcanvas" href="#offcanvasSmall" role="button" aria-controls="offcanvasExample">
+                <span><i class="fa-solid fa-bars"></i></span>
+              </a>
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSmall" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <!-- LOGO -->
+                  <a href="#"><img src="./images/Logo.png" height="50px" alt=""></a>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  
+                  <!-- * SM menu-->
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li>
+                    
+                      <div class="dropdown">
+                        <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Features
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+
+
+
+
+
+                    </li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                  <!-- * Sm Menu ends -->
+
+                </div>
+              </div>
+
+
+          <!-- END! -->
+          </div>
+
+          <div class="col-5 logo">
+            <a href="#"><img src="./images/Logo.png" alt="" /></a>
+          </div>
+          <div class="col-4 text-center">
+            <!-- * social LINKS -->
+            <div class="social-link">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-bag-shopping">
+                      <span class="cartCount">0</span>
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- * Small menu -->
+
+    
+    <!-- *BANNER SLIDER -->
+      <section id="banner">
+        <div class="bannerSlider">
+
+          <!-- banner Slide -->
+          <div class="bannerSlide" style="background-image: url(./images/banner.jpg);">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="banner_Cnt col-lg-5">
+                  <h6>Mega Sale</h6>
+                  <h2>Up To 35% Off</h2>
+                  <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                  <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bannerSlide" style="background-image: url(./images/banner.jpg);">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="banner_Cnt col-lg-5">
+                  <h6>Mega Sale</h6>
+                  <h2>Up To 35% Off</h2>
+                  <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                  <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bannerSlide" style="background-image: url(./images/banner.jpg);">
+            <div class="container h-100">
+              <div class="row align-items-center h-100">
+                <div class="banner_Cnt col-lg-5">
+                  <h6>Mega Sale</h6>
+                  <h2>Up To 35% Off</h2>
+                  <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                  <a href="#">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- banner Slide -->
+        </div>
+      </section>
+    <!-- *banner slider end -->
+      <!-- <br> -->
+    <!-- *display product -->
+      <section id="displayProducts">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="dp1">
+                <a href="#">
+                  <img src="./images/dp1.png" alt="">
+                </a>
+              </div>
+              <div class="dp2">
+                <a href="#">
+                  <img src="./images/dp2.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <a href="#">
+                <img src="./images/dp3.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- *display product end -->
+
+    <!-- *NEW product -->
+    <section id="newProduct"> 
+      <div class="container position-relative">
+
+        <div class="row text-center">
+          <div class="product-text">
+            <h2>
+              New Arrivals Products
+            </h2>
+          </div>
+        </div>
+        
+        <div class="productSlider">
+
+        
+
+
+
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+
+
+        </div>
+
+        <div id="productLeftArrow" class="leftArrow"><i class="fa-solid fa-angle-left"></i></div>
+        <div id="productRightArrow" class="rightArrow"><i class="fa-solid fa-angle-right"></i></div>
+
+
+
+          
+        </div>
+      </div>
+    </section>
+    <!-- *NEW product end-->
+
+
+    <!-- *BANNER 2 -->
+    <section id="banner2">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-lg-4">
+            <div class="banner_Cnt">
+              <h4>
+                Get Up To 35% Off all
+                Best Spa Cosmetics
+                Cream
+              </h2>
+              <p>
+                Holisticly maximize interoperable action items for effective e-business. Globally impact enterprise-wide niche markets through dynamic.
+              </p>
+            </div>
+
+            <div class="link">
+              <a href="#">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *BANNER 2 -->
+
+
+    <!-- *Best seals product -->
+    <section id="seals-product">
+      <div class="container">
+        <div class="row num1">
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row num2">
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="productSlide">
+              <div class="productImg">
+                <a href="#">
+                  <img src="./images/np1.png" alt="">
+                </a>
+
+
+                <div class="label">
+                  -45%
+                </div>
+
+                <div class="overlay">
+                  <ul>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"#"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to favorite"#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to bookmark"#"><i class="fa-solid fa-eye"></i></a></li>
+                    <li><a  data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to chart"#"><i class="fa-solid fa-chart-simple"></i></a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="productText">
+                <p>$150.65</p>
+                <a href="#">
+                  <h4>Lotion Shower gel</h4>
+                </a>
+                <span>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *Best seals product -->
+
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- end -->
+  </body>
+</html>

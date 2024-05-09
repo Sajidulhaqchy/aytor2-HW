@@ -1,0 +1,434 @@
+/* *Roots */
+:root {
+  --font-family: "Josefin Sans", sans-serif;
+  --second-family: "Roboto", sans-serif;
+  --text-color: #11161e;
+  --3d-primary-color: #151a32;
+  --comon-colot: #fff;
+  --1st-primary-color: #ff6f61;
+  --paragraph-color: #444;
+  --2nd-primary-color: #ff5645;
+  --background-color: #f1f1f1;
+  --bg: #f1f3f4;
+  --black: #000;
+  --a6aab7: #a6aab7;
+}
+
+/* *    COMMON CSS STARTS HARE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+}
+
+/* *common css ens */
+
+/* *navbar */
+
+#navLg ul li a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-color);
+  padding: 37px 22.5px;
+}
+#navLg ul li a.active-link {
+  color: var(--1st-primary-color);
+}
+#navLg ul li a :hover {
+  color: var(--1st-primary-color);
+}
+#navLg ul li:hover a {
+  color: var(--1st-primary-color);
+}
+
+nav .social-link ul li {
+  display: inline-block;
+}
+
+nav .social-link ul li a {
+  color: var(--3d-primary-color);
+  padding: 0 10px;
+  font-size: 18px;
+  position: relative;
+}
+
+nav .social-link ul li a span.cartCount {
+  position: absolute;
+  top: -4px;
+  right: 2px;
+  background-color: var(--1st-primary-color);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--comon-colot);
+
+
+}
+.navbarSm {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+.navbarSm .social-link ul {
+  text-align: center;
+}
+.navbarSm .social-link ul li a {
+  padding: 0 5px;
+}
+.navbarSm .logo img {
+  height: 50%;
+  min-width: 100%;
+}
+.navbarSm .logo {
+  text-align: center;
+  padding: 15px 0;
+}
+nav .social-link ul li a span.cartCount {
+  right: -4px;
+}
+.navbarSm .menuSm a {
+  color: var(--3d-primary-color);
+}
+
+#offcanvasSmall .offcanvas-body ul li a{
+  text-align: left;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--text-color);
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+#offcanvasSmall .offcanvas-body ul li:last-child a{
+  border: none;
+}
+
+/* *banner */
+#banner {
+  position: relative;
+  margin-bottom:80px;
+}
+#banner .bannerSlider .bannerSlide {
+  height: 800px;
+  /* background-color: blue; */
+  background-size: cover ;
+  background-position: center;
+}
+
+#banner .bannerSlide *{
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+}
+#banner .bannerSlide.slick-active *{
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+
+#banner .banner_Cnt h6{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: #1d1d1d;
+}
+#banner .banner_Cnt h2{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 116%;
+  color: #1d1d1d;
+  margin: 14px 0 16px 0;
+  transition-delay: 0.2s;
+}
+#banner .banner_Cnt p{
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #1d1d1d;
+  margin-bottom: 29px;
+  transition-delay: 0.4s;
+}
+#banner .banner_Cnt a{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--comon-colot);
+  background: var(--1st-primary-color);
+  padding: 13px 11px 13px 38px ;
+  display: inline-block ;
+  transition-delay: 0.6s;
+}
+#banner .banner_Cnt a i{
+  padding: 10px 8.18px 10px 11px;
+}
+
+.bannerDots{
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bannerDots li {
+  display: inline-block;
+}
+.bannerDots li button{
+  width: 10.91px;
+  height: 6px;
+  border-radius: 5px ;
+  background-color: black;
+  border: none;
+  color: transparent;
+  margin-right: 5.46px;
+  transition: 0.33s ease;
+}
+
+.bannerDots li.slick-active button{
+  width: 28.36px;
+  background-color: var(--1st-primary-color);
+}
+
+/* *display product */-------------------
+
+/* #displayProducts{
+  margin-top: 80px !important;
+} */
+
+#displayProduct .dp2{
+  margin-top: 24px;
+}
+
+/* *NEW product */
+
+#newProduct{
+  margin: 182px 0px 100px !important;
+  position: relative;
+}
+#newProduct   .Product-Text{
+  text-align: center;
+}
+#newProduct .Product-Text h2{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 128%;
+  text-align: center;
+  color: var(--text-color);
+  margin: 112px 0 24px 0;
+}
+#newProduct .productSlider .productSlide{
+  padding: 0 12px !important;
+}
+.leftArrow,
+.rightArrow{
+  background-color: rgb(21, 26, 50, 0.5);
+  color: white;
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.leftArrow{
+  left: 23px;
+}
+
+.rightArrow{
+  right: 23px;
+}
+/* .productSlide{
+  outline: 1px solid red;
+} */
+
+
+.productSlide .productImg img{
+  width: 100%;
+  display: block;
+}
+
+.productSlide .productImg {
+  position: relative;
+}
+.productSlide .productImg .label{
+  position: absolute;
+  top: 9px;
+  left: 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--comon-colot);
+  transform: rotate(-90deg);
+  padding: 0 9px;
+  border-radius: 13px 0 0 13px;
+  background-color: var(--1st-primary-color);
+}
+.productSlide .productImg .overlay{
+  position: absolute;
+  right: 18px;
+  top: 44px;
+}
+
+.productSlide .productImg .overlay ul li a{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--3d-primary-color);
+  display: block;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+
+.productSlide .productImg .overlay ul li a:hover{
+background-color: var(--1st-primary-color);
+color: white;
+}
+
+.productSlide .productImg .overlay ul li{
+  transform: translateX(-80px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s ease;
+}
+.productSlide .productImg:hover .overlay ul li{
+  transform: translateX(0px);
+  opacity: 1;
+  visibility: visible;
+}
+.productSlide .productImg:hover .overlay ul li:nth-child(2){
+    transition-delay: 0.15s;
+}
+.productSlide .productImg:hover .overlay ul li:nth-child(3){
+  transition-delay: 0.3s;
+}
+.productSlide .productImg:hover .overlay ul li:nth-child(4){
+  transition-delay: 0.45s;
+}
+.productSlide .productText{
+  padding: 24px 0 26px 0;
+  text-align: center;
+}
+
+.productSlide .productText p{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: var(--paragraph-color);
+}
+.productSlide .productText h4{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: var(--text-color);
+  margin: 4px 0px 11px ;
+}
+.productSlide .productText span{
+  color: var(--1st-primary-color);
+  font-size:12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* * BANNER 2 */
+
+#banner2{
+  margin-top: 80px !important;
+}
+
+
+#banner2 {
+background-image: url(../images/banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* position: relative;
+  z-index: 1; */
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+#banner2 .banner_Cnt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+#banner2 .banner_Cnt h4{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 128%;
+  color: var(--comon-colot);
+}
+
+#banner2 .banner_Cnt p{
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--comon-colot);
+}
+
+#banner2 .link a{
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--comon-colot);
+  border: 1px solid var(--comon-colot);
+  padding: 13px 34px;
+}
